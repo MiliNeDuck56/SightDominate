@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://beix44s2gbtbo"]
+
+[ext_resource type="PackedScene" uid="uid://ci0ngmb8rwofq" path="res://line_screen.tscn" id="1_vouji"]
+
+[node name="Screen" type="Node2D" unique_id=624983422]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1714814545]
+offset_right = 640.0
+offset_bottom = 480.0
+color = Color(0, 0, 0, 1)
+
+[node name="LineScreen" parent="." unique_id=1630442717 instance=ExtResource("1_vouji")]

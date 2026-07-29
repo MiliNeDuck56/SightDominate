@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://ci0ngmb8rwofq"]
+
+[node name="LineScreen" type="Node2D" unique_id=1630442717]
+
+[node name="LineGround" type="ColorRect" parent="." unique_id=1204365586]
+offset_left = 80.0
+offset_right = 560.0
+offset_bottom = 480.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.25490198, 0.25490198, 0.25490198, 1)
+
+[node name="JudgmentLine" type="ColorRect" parent="." unique_id=1883014330]
+offset_left = 80.0
+offset_top = 448.0
+offset_right = 560.0
+offset_bottom = 450.0
