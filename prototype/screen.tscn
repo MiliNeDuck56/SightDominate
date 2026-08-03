@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://beix44s2gbtbo"]
 
-[ext_resource type="PackedScene" uid="uid://ci0ngmb8rwofq" path="res://line_screen.tscn" id="1_vouji"]
+[ext_resource type="PackedScene" uid="uid://ci0ngmb8rwofq" path="res://prototype/line_screen.tscn" id="1_vouji"]
 
 [node name="Screen" type="Node2D" unique_id=624983422]
 
