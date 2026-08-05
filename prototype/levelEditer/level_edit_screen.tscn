@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://r5ggehmvm2tj"]
+
+[ext_resource type="PackedScene" uid="uid://m0wrvndst2xl" path="res://prototype/levelEditer/fileControl/load_file.tscn" id="1_sfp6l"]
+
+[node name="levelEditScreen" type="Node2D" unique_id=1196907067]
+
+[node name="LoadFile" parent="." unique_id=260531963 instance=ExtResource("1_sfp6l")]
+position = Vector2(0, 419)

@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://m0wrvndst2xl"]
+
+[ext_resource type="Script" uid="uid://nef73ipl1i3g" path="res://prototype/levelEditer/fileControl/load_file.gd" id="1_hrnus"]
+
+[node name="LoadFile" type="Node2D" unique_id=260531963]
+script = ExtResource("1_hrnus")
+
+[node name="openMusicFile" type="FileDialog" parent="." unique_id=1663856597]
+oversampling_override = 1.0
+title = "Open a File"
+initial_position = 1
+size = Vector2i(515, 240)
+file_mode = 0
+display_mode = 1
+
+[node name="LoadFile" type="Button" parent="." unique_id=2031837956]
+offset_right = 91.0
+offset_bottom = 31.0
+text = "LoadMusic"
+
+[node name="MusicName" type="Label" parent="." unique_id=1745242985]
+offset_top = 31.0
+offset_right = 91.0
+offset_bottom = 54.0
+text = "None"
+
+[connection signal="file_selected" from="openMusicFile" to="." method="_on_open_music_file_file_selected"]
+[connection signal="pressed" from="LoadFile" to="." method="_on_load_file_pressed"]

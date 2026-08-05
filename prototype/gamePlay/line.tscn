@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://cxwr1a1vsef8t"]
+
+[ext_resource type="Script" uid="uid://s4jovqs8gtx5" path="res://prototype/gamePlay/line.gd" id="1_fbki4"]
+
+[node name="Line" type="Node2D" unique_id=1286902096]
+script = ExtResource("1_fbki4")
+
+[node name="LineGround" type="ColorRect" parent="." unique_id=203345869]
+offset_right = 60.0
+offset_bottom = 480.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+color = Color(0.25490198, 0.25490198, 0.25490198, 1)
+
+[node name="DivisionLine" type="Node2D" parent="." unique_id=1187907804]
+
+[node name="Left" type="ColorRect" parent="DivisionLine" unique_id=1200150592]
+offset_right = 1.0
+offset_bottom = 480.0
+color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+
+[node name="Right" type="ColorRect" parent="DivisionLine" unique_id=710680804]
+offset_left = 59.0
+offset_right = 60.0
+offset_bottom = 480.0
+color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+
+[node name="JudgmentLine" type="ColorRect" parent="." unique_id=1269159526]
+offset_top = 448.0
+offset_right = 60.0
+offset_bottom = 450.0
+
+[node name="Lightning" type="Timer" parent="." unique_id=420529481]
+wait_time = 0.05
+one_shot = true
+
+[connection signal="timeout" from="Lightning" to="." method="_on_lightning_timeout"]
