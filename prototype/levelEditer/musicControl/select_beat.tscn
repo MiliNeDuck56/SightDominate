@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dmrd0lcsepgux"]
+
+[node name="selectBeat" type="Node2D" unique_id=303109200]
+
+[node name="Beat" type="OptionButton" parent="." unique_id=1922983022]
+offset_top = 22.0
+offset_right = 73.0
+offset_bottom = 53.0
+item_count = 2
+popup/item_0/text = "4 / 4"
+popup/item_0/id = 1
+popup/item_1/text = "3 / 4"
+popup/item_1/id = 1
+
+[node name="Label" type="Label" parent="." unique_id=870980074]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "Beat"

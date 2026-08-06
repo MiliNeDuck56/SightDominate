@@ -1,8 +1,20 @@
 [gd_scene format=3 uid="uid://r5ggehmvm2tj"]
 
-[ext_resource type="PackedScene" uid="uid://m0wrvndst2xl" path="res://prototype/levelEditer/fileControl/load_file.tscn" id="1_sfp6l"]
+[ext_resource type="PackedScene" uid="uid://m0wrvndst2xl" path="res://prototype/levelEditer/musicControl/load_file.tscn" id="1_sfp6l"]
+[ext_resource type="PackedScene" uid="uid://dmrd0lcsepgux" path="res://prototype/levelEditer/musicControl/select_beat.tscn" id="2_nsrat"]
+[ext_resource type="PackedScene" uid="uid://bqlyrjk5kru26" path="res://prototype/levelEditer/musicControl/select_grid.tscn" id="3_eb66n"]
+[ext_resource type="PackedScene" uid="uid://bfef43v7j74k7" path="res://prototype/levelEditer/musicControl/select_bpm.tscn" id="4_7kn4g"]
 
 [node name="levelEditScreen" type="Node2D" unique_id=1196907067]
 
 [node name="LoadFile" parent="." unique_id=260531963 instance=ExtResource("1_sfp6l")]
-position = Vector2(0, 419)
+position = Vector2(447, 420)
+
+[node name="selectBeat" parent="." unique_id=303109200 instance=ExtResource("2_nsrat")]
+position = Vector2(5, 420)
+
+[node name="selectGrid" parent="." unique_id=325896886 instance=ExtResource("3_eb66n")]
+position = Vector2(80, 420)
+
+[node name="selectBPM" parent="." unique_id=862229337 instance=ExtResource("4_7kn4g")]
+position = Vector2(155, 420)

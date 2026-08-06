@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bfef43v7j74k7"]
+
+[node name="selectBPM" type="Node2D" unique_id=303109200]
+
+[node name="Label" type="Label" parent="." unique_id=870980074]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "BPM"
+
+[node name="LineEdit" type="LineEdit" parent="." unique_id=1253037440]
+offset_top = 22.0
+offset_right = 68.5
+offset_bottom = 53.0
+placeholder_text = ". . ."
