@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://b1x0gal6iciva"]
+
+[node name="MusicProgress" type="Node2D" unique_id=368077852]
+
+[node name="Background" type="ColorRect" parent="." unique_id=885265741]
+offset_right = 640.0
+offset_bottom = 15.0
+color = Color(0.5882353, 0.5882353, 0.5882353, 1)
+
+[node name="Buttons" type="Node2D" parent="." unique_id=520386811]
+
+[node name="Play" type="Button" parent="Buttons" unique_id=1318262950]
+offset_left = 15.0
+offset_right = 30.0
+offset_bottom = 15.0
+
+[node name="Stop" type="Button" parent="Buttons" unique_id=1816389709]
+offset_left = 45.0
+offset_right = 60.0
+offset_bottom = 15.0
+
+[node name="Pause" type="Button" parent="Buttons" unique_id=81890250]
+offset_left = 30.0
+offset_right = 45.0
+offset_bottom = 15.0

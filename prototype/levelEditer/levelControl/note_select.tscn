@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://c4e4cqq6v328h"]
+
+[node name="NoteSelect" type="Node2D" unique_id=1818168520]
+
+[node name="ItemList" type="ItemList" parent="." unique_id=1634410384]
+offset_right = 90.0
+offset_bottom = 89.0
+item_count = 3
+item_0/text = "Note"
+item_1/text = "Long"
+item_2/text = "Slid"

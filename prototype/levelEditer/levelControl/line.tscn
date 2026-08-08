@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bps7ct16355jn"]
+
+[node name="Line" type="Node2D" unique_id=145515248]
+
+[node name="LineBackground" type="ColorRect" parent="." unique_id=785778897]
+offset_right = 60.0
+offset_bottom = 420.0
+color = Color(0.25490198, 0.25490198, 0.25490198, 1)
+
+[node name="DivisionLine" type="Node2D" parent="LineBackground" unique_id=117627257]
+
+[node name="Left" type="ColorRect" parent="LineBackground/DivisionLine" unique_id=291768117]
+offset_right = 1.0
+offset_bottom = 420.0
+color = Color(0.23392546, 0.23392546, 0.23392543, 1)
+
+[node name="Right" type="ColorRect" parent="LineBackground/DivisionLine" unique_id=1721320012]
+offset_left = 59.0
+offset_right = 60.0
+offset_bottom = 420.0
+color = Color(0.23392546, 0.23392546, 0.23392543, 1)

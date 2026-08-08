@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b4v5vw8e88ncx"]
+
+[ext_resource type="PackedScene" uid="uid://bps7ct16355jn" path="res://prototype/levelEditer/levelControl/line.tscn" id="1_r8kkl"]
+
+[node name="LineWindow" type="Node2D" unique_id=359831731]
+
+[node name="Node2D" type="Node2D" parent="." unique_id=1867942090]
+position = Vector2(80, 0)
+
+[node name="Line1" parent="Node2D" unique_id=145515248 instance=ExtResource("1_r8kkl")]
+
+[node name="Line2" parent="Node2D" unique_id=2118760456 instance=ExtResource("1_r8kkl")]
+position = Vector2(60, 0)
+
+[node name="Line3" parent="Node2D" unique_id=1228725099 instance=ExtResource("1_r8kkl")]
+position = Vector2(120, 0)
+
+[node name="Line4" parent="Node2D" unique_id=202466481 instance=ExtResource("1_r8kkl")]
+position = Vector2(180, 0)
+
+[node name="Line5" parent="Node2D" unique_id=1289778586 instance=ExtResource("1_r8kkl")]
+position = Vector2(240, 0)
+
+[node name="Line6" parent="Node2D" unique_id=757612626 instance=ExtResource("1_r8kkl")]
+position = Vector2(300, 0)
+
+[node name="Line7" parent="Node2D" unique_id=1687098556 instance=ExtResource("1_r8kkl")]
+position = Vector2(360, 0)
+
+[node name="Line8" parent="Node2D" unique_id=1560547331 instance=ExtResource("1_r8kkl")]
+position = Vector2(420, 0)

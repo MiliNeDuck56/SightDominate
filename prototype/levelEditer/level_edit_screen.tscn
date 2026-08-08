@@ -4,17 +4,40 @@
 [ext_resource type="PackedScene" uid="uid://dmrd0lcsepgux" path="res://prototype/levelEditer/musicControl/select_beat.tscn" id="2_nsrat"]
 [ext_resource type="PackedScene" uid="uid://bqlyrjk5kru26" path="res://prototype/levelEditer/musicControl/select_grid.tscn" id="3_eb66n"]
 [ext_resource type="PackedScene" uid="uid://bfef43v7j74k7" path="res://prototype/levelEditer/musicControl/select_bpm.tscn" id="4_7kn4g"]
+[ext_resource type="PackedScene" uid="uid://b4v5vw8e88ncx" path="res://prototype/levelEditer/levelControl/line_window.tscn" id="5_th8y8"]
+[ext_resource type="PackedScene" uid="uid://c4e4cqq6v328h" path="res://prototype/levelEditer/levelControl/note_select.tscn" id="6_jbm6j"]
+[ext_resource type="PackedScene" uid="uid://b1x0gal6iciva" path="res://prototype/levelEditer/levelControl/music_progress.tscn" id="7_jbbsv"]
 
 [node name="levelEditScreen" type="Node2D" unique_id=1196907067]
 
-[node name="LoadFile" parent="." unique_id=260531963 instance=ExtResource("1_sfp6l")]
-position = Vector2(447, 420)
+[node name="MusicEdit" type="ColorRect" parent="." unique_id=2005871683]
+offset_top = 420.0
+offset_right = 640.0
+offset_bottom = 479.0
+color = Color(0.39215687, 0.39215687, 0.39215687, 1)
 
-[node name="selectBeat" parent="." unique_id=303109200 instance=ExtResource("2_nsrat")]
-position = Vector2(5, 420)
+[node name="LoadFile" parent="MusicEdit" unique_id=260531963 instance=ExtResource("1_sfp6l")]
+position = Vector2(447, 0)
 
-[node name="selectGrid" parent="." unique_id=325896886 instance=ExtResource("3_eb66n")]
-position = Vector2(80, 420)
+[node name="selectBeat" parent="MusicEdit" unique_id=303109200 instance=ExtResource("2_nsrat")]
+position = Vector2(5, 0)
 
-[node name="selectBPM" parent="." unique_id=862229337 instance=ExtResource("4_7kn4g")]
-position = Vector2(155, 420)
+[node name="selectGrid" parent="MusicEdit" unique_id=325896886 instance=ExtResource("3_eb66n")]
+position = Vector2(80, 0)
+
+[node name="selectBPM" parent="MusicEdit" unique_id=862229337 instance=ExtResource("4_7kn4g")]
+position = Vector2(155, 0)
+
+[node name="LevelEdit" type="ColorRect" parent="." unique_id=1459865593]
+offset_right = 640.0
+offset_bottom = 420.0
+color = Color(0.19607843, 0.19607843, 0.19607843, 1)
+
+[node name="LineWindow" parent="LevelEdit" unique_id=359831731 instance=ExtResource("5_th8y8")]
+position = Vector2(50, 0)
+
+[node name="NoteSelect" parent="LevelEdit" unique_id=1818168520 instance=ExtResource("6_jbm6j")]
+position = Vector2(5, 270)
+
+[node name="MusicProgress" parent="LevelEdit" unique_id=368077852 instance=ExtResource("7_jbbsv")]
+position = Vector2(0, 405)
