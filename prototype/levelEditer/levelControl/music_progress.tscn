@@ -13,13 +13,34 @@ color = Color(0.5882353, 0.5882353, 0.5882353, 1)
 offset_left = 15.0
 offset_right = 30.0
 offset_bottom = 15.0
+theme_override_font_sizes/font_size = 4
+text = ">"
 
 [node name="Stop" type="Button" parent="Buttons" unique_id=1816389709]
 offset_left = 45.0
 offset_right = 60.0
 offset_bottom = 15.0
+theme_override_font_sizes/font_size = 4
+text = "□"
 
 [node name="Pause" type="Button" parent="Buttons" unique_id=81890250]
 offset_left = 30.0
 offset_right = 45.0
 offset_bottom = 15.0
+theme_override_font_sizes/font_size = 4
+text = "||"
+
+[node name="Progress" type="Node2D" parent="." unique_id=2016701256]
+
+[node name="SongProgress" type="HSlider" parent="Progress" unique_id=596923379]
+offset_left = 65.0
+offset_right = 612.0
+offset_bottom = 16.0
+
+[node name="SongTimer" type="Label" parent="Progress" unique_id=1793026262]
+offset_left = 613.0
+offset_right = 640.0
+offset_bottom = 15.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "00:00"
