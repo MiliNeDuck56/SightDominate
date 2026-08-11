@@ -7,6 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://b4v5vw8e88ncx" path="res://prototype/levelEditer/levelControl/line_window.tscn" id="5_th8y8"]
 [ext_resource type="PackedScene" uid="uid://c4e4cqq6v328h" path="res://prototype/levelEditer/levelControl/note_select.tscn" id="6_jbm6j"]
 [ext_resource type="PackedScene" uid="uid://b1x0gal6iciva" path="res://prototype/levelEditer/levelControl/music_progress.tscn" id="7_jbbsv"]
+[ext_resource type="Script" uid="uid://dk4ngcyvk16lo" path="res://prototype/levelEditer/music.gd" id="8_iqoha"]
 
 [node name="levelEditScreen" type="Node2D" unique_id=1196907067]
 script = ExtResource("1_jbbsv")
@@ -41,3 +42,4 @@ position = Vector2(5, 280)
 position = Vector2(0, 405)
 
 [node name="Music" type="AudioStreamPlayer" parent="." unique_id=1873994961]
+script = ExtResource("8_iqoha")
