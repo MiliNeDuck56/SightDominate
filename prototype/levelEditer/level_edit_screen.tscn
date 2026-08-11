@@ -2,32 +2,22 @@
 
 [ext_resource type="Script" uid="uid://dcd7c16qgmd6m" path="res://prototype/levelEditer/level_edit_screen.gd" id="1_jbbsv"]
 [ext_resource type="PackedScene" uid="uid://m0wrvndst2xl" path="res://prototype/levelEditer/musicControl/load_file.tscn" id="1_sfp6l"]
+[ext_resource type="Script" uid="uid://bayubhagq2j2o" path="res://prototype/levelEditer/level_edit.gd" id="2_j67ob"]
 [ext_resource type="PackedScene" uid="uid://bqlyrjk5kru26" path="res://prototype/levelEditer/musicControl/select_grid.tscn" id="3_eb66n"]
 [ext_resource type="PackedScene" uid="uid://bfef43v7j74k7" path="res://prototype/levelEditer/musicControl/select_bpm.tscn" id="4_7kn4g"]
 [ext_resource type="PackedScene" uid="uid://b4v5vw8e88ncx" path="res://prototype/levelEditer/levelControl/line_window.tscn" id="5_th8y8"]
 [ext_resource type="PackedScene" uid="uid://c4e4cqq6v328h" path="res://prototype/levelEditer/levelControl/note_select.tscn" id="6_jbm6j"]
+[ext_resource type="Script" uid="uid://bkj5spfgr6wds" path="res://prototype/levelEditer/music_edit.gd" id="6_vv0fv"]
 [ext_resource type="PackedScene" uid="uid://b1x0gal6iciva" path="res://prototype/levelEditer/levelControl/music_progress.tscn" id="7_jbbsv"]
 [ext_resource type="Script" uid="uid://dk4ngcyvk16lo" path="res://prototype/levelEditer/music.gd" id="8_iqoha"]
 
 [node name="levelEditScreen" type="Node2D" unique_id=1196907067]
 script = ExtResource("1_jbbsv")
 
-[node name="MusicEdit" type="ColorRect" parent="." unique_id=2005871683]
-offset_top = 420.0
-offset_right = 640.0
-offset_bottom = 479.0
-color = Color(0.39215687, 0.39215687, 0.39215687, 1)
+[node name="LevelEdit" type="Node2D" parent="." unique_id=1782127633]
+script = ExtResource("2_j67ob")
 
-[node name="LoadFile" parent="MusicEdit" unique_id=260531963 instance=ExtResource("1_sfp6l")]
-position = Vector2(529, 0)
-
-[node name="selectGrid" parent="MusicEdit" unique_id=325896886 instance=ExtResource("3_eb66n")]
-position = Vector2(18, 0)
-
-[node name="selectBPM" parent="MusicEdit" unique_id=862229337 instance=ExtResource("4_7kn4g")]
-position = Vector2(95, 0)
-
-[node name="LevelEdit" type="ColorRect" parent="." unique_id=1459865593]
+[node name="Background" type="ColorRect" parent="LevelEdit" unique_id=1459865593]
 offset_right = 640.0
 offset_bottom = 420.0
 color = Color(0.19607843, 0.19607843, 0.19607843, 1)
@@ -40,6 +30,24 @@ position = Vector2(5, 280)
 
 [node name="MusicProgress" parent="LevelEdit" unique_id=368077852 instance=ExtResource("7_jbbsv")]
 position = Vector2(0, 405)
+
+[node name="MusicEdit" type="Node2D" parent="." unique_id=1500703534]
+script = ExtResource("6_vv0fv")
+
+[node name="BackGround" type="ColorRect" parent="MusicEdit" unique_id=2005871683]
+offset_top = 420.0
+offset_right = 640.0
+offset_bottom = 479.0
+color = Color(0.39215687, 0.39215687, 0.39215687, 1)
+
+[node name="LoadFile" parent="MusicEdit" unique_id=260531963 instance=ExtResource("1_sfp6l")]
+position = Vector2(529, 420)
+
+[node name="selectGrid" parent="MusicEdit" unique_id=325896886 instance=ExtResource("3_eb66n")]
+position = Vector2(18, 420)
+
+[node name="selectBPM" parent="MusicEdit" unique_id=862229337 instance=ExtResource("4_7kn4g")]
+position = Vector2(95, 420)
 
 [node name="Music" type="AudioStreamPlayer" parent="." unique_id=1873994961]
 script = ExtResource("8_iqoha")

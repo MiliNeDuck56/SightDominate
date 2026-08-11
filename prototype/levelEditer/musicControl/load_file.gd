@@ -5,7 +5,6 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	openFileWindow.add_filter("*.wav","audio")
-	
 
 func _on_load_file_pressed() -> void:
 	openFileWindow.visible = true
