@@ -13,8 +13,8 @@ func MusicPlayButtonDown():
 	$"../LevelEdit/MusicProgress/ProgressUpdate".start()
 	self.play(musicPoint)
 	
-func MusicPauseButtonDown():
-	musicPoint = self.get_playback_position()
+func MusicPauseButtonDown(musicPoint_ = null):
+	musicPoint = self.get_playback_position() if musicPoint_ == null else musicPoint_
 	$"../LevelEdit/MusicProgress/ProgressUpdate".stop()
 	self.stop()
 	
