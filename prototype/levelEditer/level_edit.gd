@@ -11,4 +11,6 @@ func musicSetting(music : AudioStreamWAV):
 	
 	var MusicProgress = $MusicProgress/Progress
 	MusicProgress.get_node("SongTimerEnd").text = "%02d:%02d" % [total_seconds/60, total_seconds%60]
+	MusicProgress.get_node("SongProgress").max_value = total_seconds
+	$MusicProgress.musicSelected()
 	

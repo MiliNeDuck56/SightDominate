@@ -1,10 +1,15 @@
 extends Node2D
 
+var music
+var Progress
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
+	Progress = $Progress
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
+func musicSelected():
+	music = $"../../Music"
+
+func _on_progress_update_timeout() -> void:
+	var point = int(music.get_playback_position())
+	Progress.get_node("SongTimerNow").text = "%02d:%02d" % [point/60, point%60]
+	Progress.get_node("SongProgress").value = point

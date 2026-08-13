@@ -10,12 +10,15 @@ func _ready() -> void:
 	MusicProgress.get_node("Stop").button_down.connect(MusicStopButtonDown)
 
 func MusicPlayButtonDown(): 
+	$"../LevelEdit/MusicProgress/ProgressUpdate".start()
 	self.play(musicPoint)
 	
 func MusicPauseButtonDown():
 	musicPoint = self.get_playback_position()
+	$"../LevelEdit/MusicProgress/ProgressUpdate".stop()
 	self.stop()
 	
 func MusicStopButtonDown(): 
 	musicPoint = 0
+	$"../LevelEdit/MusicProgress/ProgressUpdate".stop()
 	self.stop()
