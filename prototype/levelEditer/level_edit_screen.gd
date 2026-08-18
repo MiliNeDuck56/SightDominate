@@ -4,7 +4,7 @@ extends Node2D
 func _ready() -> void:
 	$MusicEdit/LoadFile/openMusicFile.file_selected.connect(fileSelected)
 	$MusicEdit/selectGrid/Grid.item_selected.connect(itemSelected)
-	itemSelected(4)
+	itemSelected(0)
 	
 func fileSelected(path: String):
 	var music = load(path)

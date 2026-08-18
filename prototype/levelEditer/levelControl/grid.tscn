@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://bnyn8g0vv2tkr"]
+
+[ext_resource type="Script" uid="uid://dhqjnx8d3jmss" path="res://prototype/levelEditer/levelControl/grid.gd" id="1_mnyfi"]
+
+[node name="Grid" type="Node2D" unique_id=2026405177]
+script = ExtResource("1_mnyfi")
