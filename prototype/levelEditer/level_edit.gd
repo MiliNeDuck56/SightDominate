@@ -1,9 +1,5 @@
 extends Node2D
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass
 	
 func musicSetting(music : AudioStreamWAV):
 	var length = music.get_length()
@@ -14,3 +10,5 @@ func musicSetting(music : AudioStreamWAV):
 	MusicProgress.get_node("SongProgress").max_value = total_seconds
 	$MusicProgress.musicSelected()
 	
+func itemSelected(value: int):
+	$LineWindow.itemSelected(value)

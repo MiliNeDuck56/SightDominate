@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://bps7ct16355jn"]
 
+[ext_resource type="Script" uid="uid://bmf2d1y7rb8h" path="res://prototype/levelEditer/levelControl/line.gd" id="1_s4khg"]
+
 [node name="Line" type="Node2D" unique_id=145515248]
+script = ExtResource("1_s4khg")
 
 [node name="LineBackground" type="ColorRect" parent="." unique_id=785778897]
 offset_right = 60.0
