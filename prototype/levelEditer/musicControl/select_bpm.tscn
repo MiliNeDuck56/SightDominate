@@ -11,4 +11,5 @@ text = "BPM"
 offset_top = 22.0
 offset_right = 68.5
 offset_bottom = 53.0
+text = "100"
 placeholder_text = ". . ."

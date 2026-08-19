@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://bmf2d1y7rb8h" path="res://prototype/levelEditer/levelControl/line.gd" id="1_s4khg"]
 [ext_resource type="Script" uid="uid://bcerp6sjoqgo4" path="res://prototype/levelEditer/levelControl/girds.gd" id="2_gkymv"]
-[ext_resource type="PackedScene" uid="uid://bnyn8g0vv2tkr" path="res://prototype/levelEditer/levelControl/grid.tscn" id="3_ht5s7"]
 
 [node name="Line" type="Node2D" unique_id=145515248]
 script = ExtResource("1_s4khg")
@@ -27,14 +26,3 @@ color = Color(0.23392546, 0.23392546, 0.23392543, 1)
 
 [node name="Grids" type="Node2D" parent="." unique_id=794449323]
 script = ExtResource("2_gkymv")
-
-[node name="Grid1" parent="Grids" unique_id=2026405177 instance=ExtResource("3_ht5s7")]
-
-[node name="Grid2" parent="Grids" unique_id=1408659778 instance=ExtResource("3_ht5s7")]
-position = Vector2(0, 101.25)
-
-[node name="Grid3" parent="Grids" unique_id=942850629 instance=ExtResource("3_ht5s7")]
-position = Vector2(0, 202.5)
-
-[node name="Grid4" parent="Grids" unique_id=1948041361 instance=ExtResource("3_ht5s7")]
-position = Vector2(0, 303.75)
