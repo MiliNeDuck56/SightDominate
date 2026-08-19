@@ -5,6 +5,7 @@
 [node name="ItemList" type="ItemList" parent="." unique_id=1634410384]
 offset_right = 90.0
 offset_bottom = 89.0
+allow_search = false
 item_count = 3
 item_0/text = "Note"
 item_1/text = "Long"

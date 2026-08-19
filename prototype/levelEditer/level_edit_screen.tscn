@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://bqlyrjk5kru26" path="res://prototype/levelEditer/musicControl/select_grid.tscn" id="3_eb66n"]
 [ext_resource type="PackedScene" uid="uid://bfef43v7j74k7" path="res://prototype/levelEditer/musicControl/select_bpm.tscn" id="4_7kn4g"]
 [ext_resource type="PackedScene" uid="uid://b4v5vw8e88ncx" path="res://prototype/levelEditer/levelControl/line_window.tscn" id="5_th8y8"]
+[ext_resource type="Script" uid="uid://bd753vtjsqjxj" path="res://prototype/levelEditer/levelControl/note_select.gd" id="5_vv0fv"]
 [ext_resource type="PackedScene" uid="uid://c4e4cqq6v328h" path="res://prototype/levelEditer/levelControl/note_select.tscn" id="6_jbm6j"]
 [ext_resource type="Script" uid="uid://bkj5spfgr6wds" path="res://prototype/levelEditer/music_edit.gd" id="6_vv0fv"]
 [ext_resource type="PackedScene" uid="uid://b1x0gal6iciva" path="res://prototype/levelEditer/levelControl/music_progress.tscn" id="7_jbbsv"]
@@ -27,6 +28,7 @@ position = Vector2(50, 0)
 
 [node name="NoteSelect" parent="LevelEdit" unique_id=1818168520 instance=ExtResource("6_jbm6j")]
 position = Vector2(5, 280)
+script = ExtResource("5_vv0fv")
 
 [node name="MusicProgress" parent="LevelEdit" unique_id=368077852 instance=ExtResource("7_jbbsv")]
 position = Vector2(0, 405)
